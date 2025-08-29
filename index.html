@@ -17,3 +17,133 @@
       referrerpolicy="no-referrer"
   />
 </head>
+<body class="bg-gray-100">
+      <nav
+        class="max-w-6xl mx-auto sm:p-4 mb-2 flex flex-col md:flex-row items-center justify-between gap-4 px-4"
+      >
+        <div class="flex items-center space-x-4">
+          <img src="./assets/logo-dark.png" class="h-12" alt="" />
+          <h1 class="text-2xl font-extrabold text-green-900">
+            Emergency <br />
+            Services
+          </h1>
+        </div>
+        <div class="flex items-center space-x-4">
+          <div class="bg-cyan-200 px-4 py-2 rounded-full flex items-center gap-2">
+            <span id="hearts-count" class="font-bold">0</span>
+            <img src="./assets/heart.png" class="h-8" alt="">
+          </div>
+          <div class="bg-cyan-200 px-4 py-2 rounded-full flex items-center gap-2">
+            <span id="coins-count" class="font-bold">100</span>
+            <img src="./assets/coin.png" class="h-8" alt="">
+          </div>
+          <div class="flex items-center text-white px-3 p-2 bg-green-600 rounded-full">
+            <span id="copy-count" class="font-bold">0</span>
+            <span class="ml-2">Copies</span>
+          </div>
+        </div>
+      </nav>
+         <!-- Emergency Service Directory -->
+      <section class="mt-2">
+        <div class="shadow-md mb-8 text-center text-white pt-6 pb-4"
+             style="background: linear-gradient(
+                      90deg,
+                     #013223 0%,
+                     #006747 50%,
+                     #005F42 57%,
+                     #004F36 73%,
+                     #013223 100%);"
+        >
+        <img
+            src="./assets/logo-dark.png"
+            class="h-16 mx-auto mb-2"
+            alt=""
+        />
+        <h2 class="text-2xl font-bold mb-2">Emergency Service Directory</h2>
+        <p class="text-sm">
+          Government Emergency Services at Your Fingertips - A Project by
+          Government of the People's Republic of Bangladesh
+        </p>
+        </div>
+      </section>
+
+      <main class="max-w-6xl mx-auto">
+       <div class=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4">
+          <!-- Services (3 columns) -->
+          <div class="lg:col-span-3">
+            <div
+              id="services-grid"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4"
+            >
+          <div
+            class="bg-white rounded-xl shadow-md p-4 border border-gray-200 flex flex-col justify-between h-full">
+            <div class="mb-4">
+              <div class="flex justify-between">
+                <img src="./assets/emergency.png" class="h-10 bg-pink-100 p-2 rounded-full" alt="">
+                <button
+                class="heart-icon text-xl text-gray-400 hover:text-red-500 transition-colors"
+              >
+              <i class="fa-regular fa-heart text-rose-400"></i>
+              </button>
+              </div>
+               <h3 class="text-base font-bold text-black mt-2">
+                  National Emergency Number
+                </h3>
+                <p class="text-gray-500 text-lg" >National Emergency</p>
+                <p class="text-sm text-black font-bold mt-2 mb-1">999</p>
+                <button class="rounded-full bg-gray-200 px-2 py-1">All</button>
+            </div>
+            <div class="flex items-center gap-1">
+              <button
+                class="copy-btn w-1/2 px-4 py-2 text-sm text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                data-hotline-number="999"
+              >
+              <i class="fa-solid fa-copy text-gray-400"></i>
+                Copy
+              </button>
+              <button
+                class="call-btn w-1/2 px-4 py-2 text-sm text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"
+                data-service-name="National Emergency"
+                data-service-number="999"
+              >
+              <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div
+            class="bg-white rounded-xl shadow-md p-4 border border-gray-200 flex flex-col justify-between h-full"
+          >
+            <div class="mb-4">
+              <div class="flex justify-between">
+                <img src="./assets/police.png" class="h-10 bg-pink-100 p-2 rounded-full" alt="">
+                <button
+                class="heart-icon text-xl text-gray-400 hover:text-red-500 transition-colors"
+                >
+                <i class="fa-regular fa-heart text-rose-400"></i>
+               </button>
+              </div>
+               <h3 class="text-base font-bold text-black mt-2">
+                  Police Helpline Number
+                </h3>
+                <p class="text-gray-500 text-lg" >Police</p>
+                <p class="text-sm text-black font-bold mt-2 mb-1">999</p>
+                <button class="rounded-full bg-gray-200 px-2 py-1">Police</button>
+            </div>
+            <div class="flex items-center gap-1">
+              <button
+                class="copy-btn w-1/2 px-4 py-2 text-sm text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors"
+                data-hotline-number="999"
+              >
+              <i class="fa-solid fa-copy text-gray-400"></i>
+                Copy
+              </button>
+              <button
+                class="call-btn w-1/2 px-4 py-2 text-sm text-white bg-green-600 rounded-lg hover:bg-green-700 transition-colors"
+                data-service-name="Police Helpline"
+                data-service-number="999"
+              >
+              <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
