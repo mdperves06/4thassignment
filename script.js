@@ -69,3 +69,13 @@ const alertOkBtn = document.getElementById('alert-ok-btn');
         alert(`"${hotlineNumber}" copied on clipboard!`);
         let currentCopies = parseInt(copyCount.textContent);
         copyCount.textContent = currentCopies + 1;
+
+          document.body.removeChild(tempInput);
+        }
+        });
+
+        // clear call history
+        clearHistoryBtn.addEventListener('click', () => {
+            callHistoryContainer.innerHTML = '';
+            alert('Call history cleared.');
+        });
